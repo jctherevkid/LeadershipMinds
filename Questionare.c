@@ -32,13 +32,13 @@ int main(int argc, char** argv)
 	int finalAnswer = 0, ok = 0;
 	char goAgain;
 	//Introduce the application
-	printf("Welcome to Leadership Minds. This is an interactive quiz promgram that will help pair you with an author that matches your style.");
+	printf("Welcome to Leadership Minds. This is an interactive quiz program that will help pair you with an author that matches your style.");
 	
 	//This goto option allows me to come back to the top rather than just exit when the error handling hit
 	while (!ok) {
 		printf("You get to choose how in depth this quiz is. How many questions would you like asked?\n(Choose a number between 1 and 4)\n");
 		scanf_s(" %d", &numberOfQuestions);
-		//I chose switch cases since an int is expected and other error handling seemed really ineffective. by making the default case the error, this allows only 4 true cases
+		//while loop to error handle user input
 		while (numberOfQuestions != 1 && numberOfQuestions != 2 && numberOfQuestions != 3 && numberOfQuestions != 4)
 		{
 			printf("Invalid Entry: Please enter 1, 2, 3, or 4:\n");
