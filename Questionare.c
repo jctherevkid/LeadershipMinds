@@ -326,7 +326,7 @@ void exportAnswer(char aValue[100])
 	//ensure we can open the file using stderr
 	if ((err = fopen_s(&output, "Author.txt", "w")) != 0)
 	{
-		fprintf(stderr, "Can't write to output file %s.\n", output);
+		fprintf(stderr, "Can't write to output file Author.txt\n");
 	
 	}
 	else
